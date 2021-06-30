@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+    height: 100%;
+  }
+  
+  .bg-dark-800 {
+    background-color: #353535;
+  }
+  
+  .bg-dark-900 {
+    background-color: #000;
+  }
+  
+  .bg-dark-700 {
+    background-color: #2b2c2f;
+  }
+  
+  .bg-dark-100 {
+    background-color: #ddd;
+  }
+  
+  .bg-dark-50 {
+    background-color: #eff0f4;
+  }
+  
+  .text-dark-900 {
+    color: #000;
+  }
+  
+  .text-dark-700 {
+    color: #555;
+  }
+  
+  .text-dark-600 {
+    color: #666;
+  }
+  
+  .text-dark-300 {
+    color: #bbb;
+  }
+  /*# sourceMappingURL=style.css.map */
+
+  :root{
+    --box-shadow: -3px -3px 3px rgba(255,255,255,1),
+                  3px 3px 3px #aeaec0,
+                  inset -3px -3px 3px rgba(0,0,0, 0.4),
+                  inset   3px 3px 3px rgba(255,255,255, 0.8);
+
+    --box-shadow-hover:   inset -3px -3px 3px rgba(255,255,255,.9),
+                          inset 3px 3px 3px rgba(23, 23, 24, 0.1);
+
+    --night-box-shadow:  -3px -3px 3px  rgba(255,255,255, 0.1), 
+                          3px 3px 3px rgba(0,0,0,0.8);
+
+    --night-box-shadow-inset:  -3px -3px 3px  rgba(255,255,255, 0.1), 
+                                3px 3px 3px rgba(0,0,0,0.8),
+                                inset -3px -3px 3px  rgba(255,255,255, 0.1), 
+                                inset 3px 3px 3px rgba(0,0,0,0.8);
+  }
+
+  button {
+    background: #353535;
+    margin-top: 30px;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    transition: box-shadow .2s linear;
+    box-shadow: -3px -3px 3px  rgba(255,255,255, 0.1), 
+                3px 3px 3px rgba(0,0,0,0.8);
+  }
+
+  button:hover {
+    box-shadow: -3px -3px 3px  rgba(255,255,255, 0.1), 
+                3px 3px 3px rgba(0,0,0,0.8),
+              inset -3px -3px 3px  rgba(255,255,255, 0.1), 
+              inset 3px 3px 3px rgba(0,0,0,0.8);
+  }
+
+ .button-inset {
+    box-shadow: -3px -3px 3px  rgba(255,255,255, 0.1), 
+                  3px 3px 3px rgba(0,0,0,0.8),
+                 inset -3px -3px 3px  rgba(255,255,255, 0.1), 
+                 inset 3px 3px 3px rgba(0,0,0,0.8);
+  }
+  
+  button a {
+    font-size: 25px;
+    color: #fb839e;
+    text-decoration: none;
+  }
+
+  .title {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Indie Flower', cursive;
+    padding: 20px 0;
+  }
+
+
+
+
+
+  button.sun {
+    background: #f7f7f7;
+    transition: all .6s linear;
+    box-shadow: var(--box-shadow)
+  }
+  button.sun:hover {
+    box-shadow: var(--box-shadow-hover);
+  }
+  button.sun:hover a {
+    display: inline-block;
+    transform: scale(0.9)
+  }
+  body {
+    background-color: #222;
+  }
+
+
+  .parent {
+    opacity: 0;
+    transition: all 1s ease-in;
+  }
+  .parent.active-parent {
+    opacity: 1;
+  }
+
+
+
+/* **************************************************** */
+/* **************************************************** */
+                            /* LOADER */
+/* **************************************************** */
+/* **************************************************** */
+
+  #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10000000;
+      background: #fff;
+  }
+  #loader {
+      display: block;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      width: 150px;
+      height: 150px;
+      margin: -75px 0 0 -75px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #9370DB;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+  }
+  #loader:before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #BA55D3;
+      -webkit-animation: spin 3s linear infinite;
+      animation: spin 3s linear infinite;
+  }
+  #loader:after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #FF00FF;
+      -webkit-animation: spin 1.5s linear infinite;
+      animation: spin 1.5s linear infinite;
+  }
+  @-webkit-keyframes spin {
+      0%   {
+          -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+      }
+      100% {
+          -webkit-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+      }
+  }
+  @keyframes spin {
+      0%   {
+          -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+      }
+      100% {
+          -webkit-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+      }
+  }

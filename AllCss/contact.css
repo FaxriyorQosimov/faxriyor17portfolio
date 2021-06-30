@@ -1,0 +1,304 @@
+.contact {
+    width: 100%;
+    height: auto;
+    background: #353535;
+    position: relative;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+.contact::before {
+  content: attr(data-text);
+}
+
+.contact .container>h1{
+  padding-top: 80px;
+}
+
+
+.contact .container .contact-parent {
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* position: relative; */
+}
+
+.contact .container .contact-parent .contact-parent-item1 {
+    width: 50%;
+    height: 100px;background: #353535;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+}
+.contact .container .contact-parent .contact-parent-item1 img {
+  width: 100%;
+}
+.contact .container .contact-parent .contact-parent-item2 {
+    width: 50%;
+    height: auto;background: #353535;
+    padding: 30px;
+    position: relative;
+    padding-bottom: 150px;
+    /* position: absolute;
+    top: 0;right: 0; */
+}
+
+.contact .container .contact-parent .contact-parent-item2 form input, textarea {
+    display: block;
+    width: 100%;
+    padding: 16px 8px;
+    margin: 15px 0;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    box-shadow: var(--night-box-shadow);
+    background: #353535;
+}
+
+.contact .container .contact-parent .contact-parent-item2 form input:hover, textarea:hover {
+    box-shadow:
+    inset -3px -3px 3px  rgba(255,255,255, 0.1), 
+    inset 3px 3px 3px rgba(0,0,0,0.8);
+}
+
+
+.contact .container .contact-parent .contact-parent-item2 form textarea {
+    height: 200px;
+    background: #353535;
+    box-shadow: var(--night-box-shadow);
+}
+
+.contact .container .contact-parent .contact-parent-item2 form textarea:hover {
+  box-shadow:
+  inset -3px -3px 3px  rgba(255,255,255, 0.1), 
+  inset 3px 3px 3px rgba(0,0,0,0.8);
+}
+
+
+
+.contact .container .contact-parent .contact-parent-item2 .open-icons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100000;
+    display: block;
+  }
+  
+  .contact .container .contact-parent .contact-parent-item2 .open-icons .home {
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    background-color: #353535;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: var(--night-box-shadow);
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .contact .container .contact-parent .contact-parent-item2 .open-icons .home:hover {
+    box-shadow:
+    inset -3px -3px 3px  rgba(255,255,255, 0.1), 
+    inset 3px 3px 3px rgba(0,0,0,0.8);
+  }
+  
+  .contact .container .contact-parent .contact-parent-item2 .open-icons .icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #535252;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    top: -5px;
+    left: -5px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    /* margin: 90px; */
+  }
+  
+  .contact .container .contact-parent .contact-parent-item2 .open-icons .icon:hover {
+    background-color: #fff;
+    color: black;
+  }
+  
+  .contact .container .contact-parent .contact-parent-item2 .open-icons .icon:nth-child(1) {
+    /* transition-delay: 0.2s;
+                  transition-duration: 0.1s; */
+    -webkit-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* transform: translateX(-50%); */
+  }
+  
+  .contact .container .contact-parent .contact-parent-item2 .open-icons .icon:nth-child(2) {
+    /* transition-delay: 0.3s;
+                  transition-duration: 0.1s; */
+    -webkit-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+    transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+  }
+  
+  .contact .container .contact-parent .contact-parent-item2 .open-icons .icon:nth-child(3) {
+    /* transition-delay: 0.4s;
+                  transition-duration: 0.1s; */
+    -webkit-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+    transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  }
+  
+  .contact .container .contact-parent .contact-parent-item2 .open-icons .icon:nth-child(4) {
+    /* transition-delay: 0.5s;
+                  transition-duration: 0.1s; */
+    -webkit-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.6s;
+    transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.6s;
+  }
+
+
+  .contact.sun {
+    background: #f7f7f7;
+  }
+  .contact.sun h1 {
+    color: #000;
+  }
+  .contact.sun .container .contact-parent .contact-parent-item1 {
+    background: #f7f7f7;
+  }
+  .contact.sun .container .contact-parent .contact-parent-item2 {
+    background: #f7f7f7;
+  }
+  .contact.sun .container .contact-parent .contact-parent-item2 form input, textarea {
+    background: #f7f7f7;
+    box-shadow: var(--box-shadow);
+    color: #2a2b2f;
+
+  }
+  .contact.sun .container .contact-parent .contact-parent-item2 form input:hover {
+    box-shadow: var(--box-shadow-hover);
+    color: #2a2b2f;
+  }
+
+  
+  .contact.sun .container .contact-parent .contact-parent-item2 form textarea {
+    background: #f7f7f7;
+    box-shadow: var(--box-shadow);
+
+  }
+
+  .contact.sun .container .contact-parent .contact-parent-item2 form textarea:hover {
+    box-shadow: var(--box-shadow-hover);
+
+  }
+
+  .contact.sun .container .contact-parent .contact-parent-item2 .open-icons .home {
+    background: #f7f7f7;
+    box-shadow: var(--box-shadow);
+    color: #2a2b2f;
+  }
+
+  .contact.sun .container .contact-parent .contact-parent-item2 .open-icons .home:hover {
+    box-shadow: var(--box-shadow-hover);
+  }
+  .contact.sun .container .contact-parent .contact-parent-item2 .open-icons .icon {
+    background: #f7f7f7;
+    box-shadow: var(--box-shadow);
+    color: #2a2b2f;
+  }
+  .contact.sun .container .contact-parent .contact-parent-item2 .open-icons .icon:hover {
+    background: #2a2b2f;
+    color: #fff;
+    box-shadow: var(--night-box-shadow);
+  }
+
+
+  @media screen and (max-width: 576px) {
+    .contact .container .contact-parent {
+      flex-direction: column;
+      padding-left: 75px;
+    }
+    .contact .container .contact-parent .contact-parent-item1 {
+      width: 100%;
+      height: auto;
+    }
+    .contact .container .contact-parent .contact-parent-item2 {
+      width: 100%;
+      padding: 0;
+      position: relative;
+    }
+    
+    .contact .container .contact-parent .contact-parent-item2 form input, textarea {
+      padding: 8px 10px;
+      font-size: 12px;
+    }
+
+    
+    .contact .container .contact-parent .contact-parent-item2 form button a {
+      /* padding: 8px 10px; */
+      font-size: 14px;
+    }
+    .contact .container .contact-parent .contact-parent-item2 .open-icons {
+      position: absolute;
+      bottom: -15px;
+    }
+  }
+
+  @media screen and (min-width: 577px) and (max-width: 768px)  {
+    .contact .container .contact-parent {
+      flex-direction: column;
+      padding-left: 75px;
+    }
+    .contact .container .contact-parent .contact-parent-item1 {
+      width: 100%;
+      height: auto;
+    }
+    .contact .container .contact-parent .contact-parent-item2 {
+      width: 100%;
+      padding: 0;
+    }
+    
+    .contact .container .contact-parent .contact-parent-item2 form input, textarea {
+      padding: 10px 12px;
+      font-size: 16px;
+    }
+
+    
+    .contact .container .contact-parent .contact-parent-item2 form button a {
+      /* padding: 8px 10px; */
+      font-size: 16px;
+    }
+  }
+
+  
+  @media screen and (min-width: 769px) and (max-width: 920px) {
+    .contact .container .contact-parent {
+      flex-direction: column;
+      /* padding-left: 75px; */
+    }
+    .contact .container .contact-parent .contact-parent-item1 {
+      width: 100%;
+      height: auto;
+    }
+    .contact .container .contact-parent .contact-parent-item2 {
+      width: 100%;
+      padding: 0;
+    }
+  }
