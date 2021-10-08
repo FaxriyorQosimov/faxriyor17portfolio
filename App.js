@@ -152,6 +152,6 @@ const parent = document.querySelector('.parent')
         setTimeout(() =>{
             loader.remove();
             parent.classList.add('active-parent')
-        }, 1000)
+        }, 5000)
     })
 })
