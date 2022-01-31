@@ -208,7 +208,7 @@
     font-size: 40px;
     font-weight: 400;
     position: relative;
-    color: crimson;
+    color: #fb839e;
     top: 0;
     -webkit-animation: slide 4.5s steps(3) infinite;
             animation: slide 4.5s steps(3) infinite;
@@ -964,6 +964,9 @@
   .section1 .replace-color .replace-color-card-colors .theme-color {
     width: 20px;
     height: 20px;
+  }
+  .contact .container>h1 {
+    padding-top: 20px;
   }
 }
 

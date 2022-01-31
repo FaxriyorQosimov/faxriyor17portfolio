@@ -118,7 +118,9 @@
     .container {
       max-width: 96%;
     }
-
+    .section3 .container >h1 {
+      padding-top: 20px;
+    }
     .section3 {
       width: 100%;
     }
@@ -136,7 +138,7 @@
     }
   .section3 .container #projects .projects-card {
       width: 100%;
-      margin-bottom: 60px;
+      margin-bottom: 10px;
     }
     .section3 .container #projects .projects-card .projects-card-content p{
       font-size: 12px;

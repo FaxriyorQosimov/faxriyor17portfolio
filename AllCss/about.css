@@ -28,7 +28,7 @@
 
 .about .container .about .my-skills h2 {
     color: #fff;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
 }
 
 .about .container>h1{
@@ -104,6 +104,28 @@
     background: linear-gradient(45deg, #22ffde, #2196f3);
 }
 
+#about .container .about .my-skills .skills:nth-child(6) .skills-percent .skills-progress {
+  background: linear-gradient(45deg, #1fe6ff, #673Ab7);
+}
+
+#about .container .about .my-skills .skills:nth-child(7) .skills-percent .skills-progress {
+  background: linear-gradient(45deg, #3bc0ff, #33ff00);
+}
+
+#about .container .about .my-skills .skills:nth-child(8) .skills-percent .skills-progress {
+  background: linear-gradient(45deg, #ffee54, #ff00ca);
+}
+
+#about .container .about .my-skills .skills:nth-child(9) .skills-percent .skills-progress {
+  background: linear-gradient(45deg, #22ffde, #2196f3);
+}
+#about .container .about .my-skills .skills:nth-child(10) .skills-percent .skills-progress {
+  background: linear-gradient(45deg, #1fe6ff, #673Ab7);
+}
+
+#about .container .about .my-skills .skills:nth-child(11) .skills-percent .skills-progress {
+  background: linear-gradient(45deg, #3bc0ff, #33ff00);
+}
 
 
 
@@ -180,6 +202,7 @@
   
   #about .container .about #mySelf .Experience-card {
     display: none;
+    height: 650px;
   }
   
 
@@ -237,6 +260,7 @@
     #about .container h1 {
       padding-left: 75px;
       font-size: 22px;
+      padding-top: 20px;
     }
     #about .container .about  {
       flex-direction: column;
